@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 700px;
+  margin-top: 6rem;
+  padding: 3rem;
+  border-radius: 4%;
+  border-bottom-right-radius: 40%;
+}
+.date-fields {
+  display: flex;
+  padding-bottom: 4em;
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  margin-bottom: 2em;
+}
+
+.date-fields:last-child {
+  border: 0;
+  padding: 0;
+}
+
+.img {
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+  top: 33%;
+  left: 65%;
+}
+
+.img:hover {
+  background: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+  padding-bottom: 0.3rem;
+  font-size: 0.7rem;
+}
+input {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  width: 70%;
+  text-align: center;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(0, 0%, 8%);
+}
+
+input[type="text"]:focus {
+  outline-color: hsl(259, 100%, 65%);
+  caret-color:hsl(259, 100%, 65%) ;
+}
+
+::placeholder {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  padding-left: 0.8rem;
+  padding-bottom: 0.2rem;
+  color: hsl(0, 1%, 44%);
+}
+.count-field {
+  padding-top: 1.5rem;
+  padding-left: 0rem;
+  margin-top: 1.5rem;
+}
+.age {
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
+  color: hsl(0, 0%, 8%);
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+.error-message-date,
+.error-message,
+.required {
+  color: hsl(0, 100%, 67%);
+  border-color: hsl(0, 100%, 67%);
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
